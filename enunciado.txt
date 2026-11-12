@@ -1,5 +1,3 @@
-
-
 Montar uma rede em anel com 4 máquinas sobre a Ethernet usando Socket Datagram com passagem de bastão.
 
 Implementar um jogo de roleta distrbuído sobre o anel seguindo as redes abaixo
