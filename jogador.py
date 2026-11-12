@@ -2,7 +2,7 @@ import socket
 import json
 import random
 
-class no:
+class jogador:
     def __init__(self, id, ip, porta, proximo_id, ip_destino, porta_destino, fichas_iniciais):
         
         # Estado do jogador
@@ -14,12 +14,13 @@ class no:
         self.pote = 0
         self.destino = (ip_destino, porta_destino)
 
+        self.meu_ip = ip
+        self.minha_porta = porta
+        
         # Criacao do socket Datagram
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         # Abre a porta para escutar mensagens
         self.sock.bind((ip, porta))
-        self.meu_ip = ip
-        self.minha_porta = porta
 
     def iniciar(self):
 
