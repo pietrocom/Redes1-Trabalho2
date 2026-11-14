@@ -137,7 +137,7 @@ class jogador:
             print(f"{utils.VERDE_T}    Você acertou a aposta! Fichas recebidas: {fichas_ganhas}. Fichas totais: {self.fichas}")
         
         else: 
-            print(f"{utils.VERMELHO_T}    Você não acertou a aposta. Nenhuma ficha recebida")
+            print(f"{utils.VERMELHO_T}    Você não acertou a aposta. Nenhuma ficha recebida{utils.RESET}")
         
         utils.enviar_mensagem(mensagem, self.sock, self.destino)
 
